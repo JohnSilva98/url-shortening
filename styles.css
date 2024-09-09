@@ -27,7 +27,7 @@ body {
 }
 
 header {
-  border: 1px solid red;
+  border: 1px dotted red;
   height: 50%;
 }
 
@@ -77,4 +77,46 @@ header img {
   list-style: none;
   display: flex;
   justify-content: space-evenly;
+}
+
+#main-container {
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+#main-content {
+  display: flex;
+}
+
+#main-container img {
+  position: relative;
+  width: 30rem;
+  left: 2rem;
+  overflow: hidden;
+}
+
+#main-text {
+  width: auto;
+}
+
+.main-text-s {
+  font-size: 3rem;
+}
+
+.main-text-p {
+  font-size: 18px;
+  width: 500px;
+  color: var(--Gray);
+  background-color: #fff;
+}
+
+#get-btn {
+  margin-top: 20px;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 30px;
+  border: none;
+  background-color: var(--Cyan);
+  color: #fff;
 }
