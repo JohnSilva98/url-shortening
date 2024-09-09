@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "poppins", sans-serif;
-  background-color: white;
+
   font-size: 18px;
 }
 
@@ -16,7 +16,7 @@
   --Red: hsl(0, 87%, 67%);
 
   /* Neutral */
-  --Gray: hsl(0, 0%, 75%);
+  --Gray: hsl(0, 0%, 81%);
   --Grayish-Violet: hsl(257, 7%, 63%);
   --Very-Dark-Blue: hsl(255, 11%, 22%);
   --Very-Dark-Violet: hsl(260, 8%, 14%);
@@ -27,7 +27,6 @@ body {
 }
 
 header {
-  border: 1px dotted red;
   height: 50%;
 }
 
@@ -39,7 +38,7 @@ header img {
   position: relative;
   left: 8rem;
   top: -2.2rem;
-  color: var(--Gray);
+  /* color: var(--Gray); */
 }
 
 #header-menu li:hover {
@@ -80,7 +79,6 @@ header img {
 }
 
 #main-container {
-  border: 1px solid red;
   display: flex;
   justify-content: space-between;
   overflow: hidden;
@@ -88,6 +86,7 @@ header img {
 }
 
 #main-content {
+  border: 1px solid red;
   display: flex;
 }
 
@@ -96,10 +95,6 @@ header img {
   width: 30rem;
   left: 2rem;
   overflow: hidden;
-}
-
-#main-text {
-  width: auto;
 }
 
 .main-text-s {
@@ -132,7 +127,7 @@ header img {
   height: 6rem;
   margin: 0 auto;
   position: relative;
-  top: -50px;
+  top: -66rem;
   display: flex;
   justify-content: center;
 }
@@ -148,4 +143,81 @@ header img {
   height: 3rem;
   border-radius: 10px;
   width: 7rem;
+}
+
+#advanced-statics {
+  background: var(--Gray);
+  position: relative;
+  top: -130px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 1000px;
+}
+
+#statics-texts {
+  margin: 0 auto;
+  position: relative;
+  top: -10rem;
+  width: 500px;
+  text-align: center;
+}
+
+#statics-texts h2 {
+  color: var(--Dark-Violet);
+  font-size: 28px;
+}
+
+#statics-texts p {
+  font-size: 18px;
+  color: var(--Grayish-Violet);
+}
+
+#stats-box {
+  display: flex;
+  margin: 0 auto;
+  position: relative;
+  top: 10px;
+  z-index: 1;
+}
+#stats-box h2 {
+  margin-top: 20px;
+  margin-bottom: 8px;
+}
+
+#brand,
+#detailed,
+#customizable {
+  background-color: white;
+  margin-right: 20px;
+  padding: 0 15px;
+  width: 18rem;
+  height: 14rem;
+}
+#detailed {
+  position: relative;
+  top: 50px;
+}
+
+#customizable {
+  position: relative;
+  top: 100px;
+}
+
+.thumb {
+  margin-top: -35px;
+  padding: 10px;
+  width: 4rem;
+  border-radius: 50%;
+  color: var(--Cyan);
+  background-color: var(--Very-Dark-Blue);
+}
+
+.line {
+  border: 4px solid var(--Cyan);
+  position: relative;
+  left: 300px;
+  top: -100px;
+  width: 400px;
+  z-index: -1;
 }
