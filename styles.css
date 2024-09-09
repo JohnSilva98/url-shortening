@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+  background-color: white;
+  font-size: 18px;
+}
+
+:root {
+  /* Primary colors */
+  --Cyan: hsl(180, 66%, 49%);
+  --Dark-Violet: hsl(257, 27%, 26%);
+
+  /* Secondary */
+  --Red: hsl(0, 87%, 67%);
+
+  /* Neutral */
+  --Gray: hsl(0, 0%, 75%);
+  --Grayish-Violet: hsl(257, 7%, 63%);
+  --Very-Dark-Blue: hsl(255, 11%, 22%);
+  --Very-Dark-Violet: hsl(260, 8%, 14%);
+}
+
+body {
+  margin: 10px 70px;
+}
+
+header {
+  border: 1px solid red;
+  height: 50%;
+}
+
+header img {
+  margin-top: 5px;
+}
+
+#header-menu {
+  position: relative;
+  left: 8rem;
+  top: -2.2rem;
+  color: var(--Gray);
+}
+
+#header-menu li:hover {
+  color: var(--Very-Dark-Blue);
+  cursor: pointer;
+  transition: 1s;
+}
+#login {
+  color: var(--Gray);
+}
+
+#sign-up {
+  color: #fff;
+  padding: 3px;
+  text-align: center;
+  border: 1px solid var(--Cyan);
+  background-color: var(--Cyan);
+  border-radius: 10px;
+}
+
+#header-login {
+  position: relative;
+  left: 45rem;
+  top: -3.7rem;
+}
+
+#header-login li:hover {
+  color: var(--Very-Dark-Blue);
+  cursor: pointer;
+  transition: 1s;
+}
+
+.header {
+  width: 16rem;
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+}
