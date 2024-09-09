@@ -80,9 +80,11 @@ header img {
 }
 
 #main-container {
+  border: 1px solid red;
   display: flex;
   justify-content: space-between;
   overflow: hidden;
+  height: 100vh;
 }
 
 #main-content {
@@ -119,4 +121,31 @@ header img {
   border: none;
   background-color: var(--Cyan);
   color: #fff;
+  cursor: pointer;
+}
+
+#shortener {
+  background: url(images/bg-shorten-desktop.svg);
+  background-color: var(--Dark-Violet);
+  border-radius: 10px;
+  width: 80%;
+  height: 6rem;
+  margin: 0 auto;
+  position: relative;
+  top: -50px;
+  display: flex;
+  justify-content: center;
+}
+
+#paste-link {
+  width: 80%;
+  height: 3rem;
+  margin: auto;
+  border-radius: 10px;
+}
+#shorten-btn {
+  margin: auto;
+  height: 3rem;
+  border-radius: 10px;
+  width: 7rem;
 }
