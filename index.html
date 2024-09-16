@@ -18,28 +18,43 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-
     <title>Shortly URL</title>
   </head>
   <body>
     <header id="header-content">
       <img src="images/logo.svg" alt="header-logo" class="logo" />
-      <ul id="header-menu" class="header">
+      <nav class="nav-desktop">
+        <ul id="header-menu" class="header">
+          <li class="header-items">Features</li>
+          <li class="header-items">Pricing</li>
+          <li class="header-items">Resources</li>
+        </ul>
+        <ul id="header-login" class="header">
+          <li class="header-items" id="login">Login</li>
+          <li class="header-items" id="sign-up">Sign Up</li>
+        </ul>
+      </nav>
+      <div class="menu-toggle" id="menu-toggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </header>
+    <nav class="nav-mobile" id="nav-mobile">
+      <ul id="header-menu-mobile">
         <li class="header-items">Features</li>
         <li class="header-items">Pricing</li>
         <li class="header-items">Resources</li>
-      </ul>
-      <ul id="header-login" class="header">
         <li class="header-items" id="login">Login</li>
         <li class="header-items" id="sign-up">Sign Up</li>
       </ul>
-    </header>
+    </nav>
 
     <div id="main-container">
       <div id="main-content">
         <div id="main-text">
-          <strong class="main-text-s">More than just shorter links</strong
-          ><br />
+          <strong class="main-text-s">More than just shorter links</strong>
+          <br />
           <p class="main-text-p">
             Build your brand’s recognition and get detailed insights on how your
             links are performing
@@ -131,8 +146,33 @@
               </ul>
             </div>
           </div>
+          <div id="social-media">
+            <ul class="social-logos">
+              <li class="social-icon">
+                <a href="#">
+                  <img src="images/icon-facebook.svg" alt="fb icon" />
+                </a>
+              </li>
+              <li class="social-icon">
+                <a href="#">
+                  <img src="images/icon-twitter.svg" alt="tt icon" />
+                </a>
+              </li>
+              <li class="social-icon">
+                <a href="#">
+                  <img src="images/icon-pinterest.svg" alt="pt icon" />
+                </a>
+              </li>
+              <li class="social-icon">
+                <a href="#">
+                  <img src="images/icon-instagram.svg" alt="ig icon" />
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </footer>
     </div>
+    <script src="index.js"></script>
   </body>
 </html>
